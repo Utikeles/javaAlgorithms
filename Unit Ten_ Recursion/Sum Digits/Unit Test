@@ -1,0 +1,8 @@
+public int sumDigits(int num)
+{
+    if (num==0) {
+        return 0; // Base case
+    } else {
+        return (num%10) + sumDigits(num/10);
+    }
+}

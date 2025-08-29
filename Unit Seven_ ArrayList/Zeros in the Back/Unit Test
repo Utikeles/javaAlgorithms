@@ -1,0 +1,11 @@
+public static ArrayList<Integer> zerosBack(ArrayList<Integer> arr)
+{
+    int zeroCount=0;
+    for(int i = arr.size()-1;i>=0;i--){
+        if(arr.get(i)==0){arr.remove(i);zeroCount++;}
+    }
+    for(int i = 0;i<zeroCount;i++){
+        arr.add(0);
+    }
+    return arr;
+}

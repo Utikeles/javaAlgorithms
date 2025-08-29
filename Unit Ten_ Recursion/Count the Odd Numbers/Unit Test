@@ -1,0 +1,12 @@
+public int countOdd(int[] arr, int len)
+{
+    if (len == 0) {
+        return 0;
+    }
+    int lastElement = arr[len-1];
+    if (lastElement%2!=0) { 
+        return 1 + countOdd(arr, len-1);
+    } else {
+        return 0 + countOdd(arr, len-1);
+    }
+}

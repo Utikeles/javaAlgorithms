@@ -1,0 +1,10 @@
+public ArrayList<String> wordsThatStartWith(ArrayList<String> words, String letter)
+{
+    ArrayList<String> newArray = new ArrayList<>();
+    for(String element : words) {
+        if (element.substring(0,1).equals(letter)) {
+            newArray.add(element);
+        }
+    }
+    return(newArray);
+}

@@ -1,0 +1,11 @@
+public static int[][] reverse(int[][] arr)
+{
+    int[][] newArr = new int[arr.length][arr[0].length];
+    
+    for(int i = arr.length-1, x = 0;i>=0 && x<arr.length;i--,x++) {
+        for (int j = arr[i].length-1, y = 0;j>=0 && y<arr[x].length;j--,y++) {
+            newArr[x][y] = arr[i][j];
+        }
+    }
+    return newArr;
+}

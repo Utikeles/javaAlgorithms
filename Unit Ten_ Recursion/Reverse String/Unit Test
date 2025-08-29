@@ -1,0 +1,9 @@
+public String reverse(String phrase)
+{
+    if (phrase.equals("")){
+        return "";
+    } else {
+        
+        return phrase.substring(phrase.length() - 1) + reverse(phrase.substring(0,phrase.length()-1));
+    }
+}

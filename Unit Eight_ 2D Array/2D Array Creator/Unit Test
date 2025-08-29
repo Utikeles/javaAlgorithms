@@ -1,0 +1,11 @@
+public static String[][] createArray(int row, int col)
+{
+    String[][] list = new String[row][col];
+    
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < col; j++) {
+            list[i][j]="";
+        }
+    }
+    return list;
+}

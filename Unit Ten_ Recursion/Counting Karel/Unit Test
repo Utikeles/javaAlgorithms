@@ -1,0 +1,11 @@
+public int countKarel(String phrase)
+{
+    if (phrase.length() < 5) {
+        return 0;
+    } 
+    if (phrase.startsWith("karel")) {
+        return 1 + countKarel(phrase.substring(5));
+    } else {
+        return countKarel(phrase.substring(1));
+    }
+}

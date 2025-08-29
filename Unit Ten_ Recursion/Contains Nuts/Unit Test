@@ -1,0 +1,13 @@
+public int containsNuts(ArrayList<String> list)
+{
+    if (list.isEmpty()) {
+        return 0;
+    }
+    if (list.get(list.size()-1).contains("nut")) {
+        list.remove(list.size()-1);
+        return 1 + containsNuts(list);
+    } else {
+        list.remove(list.size()-1);
+        return 0 + containsNuts(list);
+    }
+}

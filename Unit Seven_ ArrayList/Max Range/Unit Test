@@ -1,0 +1,14 @@
+public int maxRange(ArrayList<Integer> arr)
+{
+    int max=arr.get(0);
+    int min=arr.get(0);
+    for (int element : arr) {
+        if (element>max) {
+            max=element;
+        } 
+        if (element<min) {
+            min = element;
+        }
+    }
+    return (max-min);
+}

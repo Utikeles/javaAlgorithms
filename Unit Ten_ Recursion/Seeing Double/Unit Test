@@ -1,0 +1,10 @@
+public String seeDouble(String phrase)
+{
+    if (phrase.equals("")) {
+        return "";
+    } else {
+        char firstChar = phrase.charAt(0);
+        String replicatedFirstChar = String.valueOf(firstChar) + firstChar;
+        return replicatedFirstChar + seeDouble(phrase.substring(1));
+    }
+}

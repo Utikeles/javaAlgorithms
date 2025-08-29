@@ -1,0 +1,14 @@
+public static int secondLargestInt(ArrayList<Integer> arr)
+{
+    int max = 0;
+    int maxIndex=0;
+    for (int i = 0; i < arr.size();i++) {
+        if (arr.get(i) > max) {max=arr.get(i);maxIndex=i;}
+    }
+    arr.remove(maxIndex);max=0;
+    for(int i = 0; i < arr.size();i++) {
+        if(arr.get(i)>max) {max=arr.get(i);}
+    }
+    return(max);
+    
+}

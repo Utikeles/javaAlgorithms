@@ -1,0 +1,8 @@
+public static ArrayList<String> mutate(ArrayList<String> arr)
+{
+    ArrayList<String> result = new ArrayList<>();
+    for(int i = 0;i<arr.size();i++) {
+        result.add(i,arr.)
+    }
+    
+}

@@ -1,0 +1,13 @@
+public boolean more1s(ArrayList<Integer> numbers)
+{
+    int diff = 0; // oneCounterDifference.
+    
+    for (int element : numbers) {
+        if (element==1) {
+            diff++;
+        } else if (element==0) {
+            diff--;
+        } 
+    }
+    return(diff>0);
+}

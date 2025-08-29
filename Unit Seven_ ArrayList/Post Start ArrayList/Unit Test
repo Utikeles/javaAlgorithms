@@ -1,0 +1,14 @@
+public ArrayList<String> postStart(ArrayList<String> arr)
+{
+    ArrayList<String> newArray = new ArrayList<>();
+    boolean add = false;
+    for (int i = 0;i<arr.size();i++) {
+        if (add) {
+            newArray.add(arr.get(i));
+        }
+        if (arr.get(i).equals("start")) {
+            add = true;
+        }
+    }
+    return newArray;
+}
